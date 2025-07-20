@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+local_settings.py
+.env
+.env.*
+
+# Django media/static files
+/media
+/staticfiles
+/static
+*.media
+*.static
+
+# If using whitenoise or collectstatic
+/static_root/
+/media_root/
+
+# Django migrations
+**/migrations/
+!*/migrations/__init__.py
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# virtualenv
+venv/
+ENV/
+env/
+.venv/
