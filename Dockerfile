@@ -19,7 +19,8 @@ ENV PATH="/root/.cargo/bin:$PATH"
 # Copy and install dependencies
 RUN pip install uv
 COPY requirements.txt .
-RUN uv pip install --system -r requirements.txt
+#RUN uv pip install --system -r requirements.txt
+RUN uv pip sync --system requirements.txt
 
 # Copy project files
 COPY . .
