@@ -19,4 +19,39 @@ https://youtu.be/cJveiktaOSQ?si=tt64fh43rytuKSuz
 
 https://youtu.be/t-uAgI-AUxc?si=aLgdTg7gnz0wk6OH
 
+--------------------------------------------
+SET UP : 
+Create venv + Sync in One Step with uv
+bash
+uv venv
+This creates a .venv folder (just like python -m venv .venv).
 
+Activate the virtual environment
+On Linux/macOS:
+bash
+source .venv/bin/activate
+On Windows:
+cmd
+.venv\Scripts\activate
+Then sync dependencies from uv.lock
+uv sync
+uv will auto-detect .venv/bin/python or .venv\Scripts\python.exe — no need to pass --python if .venv is activated or exists
+
+----------------------------------------
+Run Django project :
+Navigate to the Django project folder (where manage.py exists), then:
+
+a. Apply migrations:
+bash
+python manage.py migrate
+b. Run the development server:
+python manage.py runserver
+
+Create a superuser (optional, for admin panel)
+python manage.py createsuperuser
+
+Collect static files (for production, optional)
+python manage.py collectstatic
+
+Optional: Regenerate uv.lock after editing pyproject.toml
+uv pip compile
