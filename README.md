@@ -38,6 +38,7 @@ uv sync
 uv will auto-detect .venv/bin/python or .venv\Scripts\python.exe — no need to pass --python if .venv is activated or exists
 
 ----------------------------------------
+
 Run Django project :
 Navigate to the Django project folder (where manage.py exists), then:
 
