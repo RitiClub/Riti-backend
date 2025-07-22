@@ -6,7 +6,7 @@
 ### 1) Django Basics
 - Understanding Django flow and integrations
 - Introduction to ORM
-- Watch from 34 min to 1hr:46min:  
+- Watch till 34 min then skip to 1hr:46min:  
   https://youtu.be/OTmQOjsl0eg?si=QUQl0hUi7RVnYqwE
 
 ### 2) ORM Integration and Data Retrieval
